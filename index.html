@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de formulario usando Expresiones Regulares</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Ejercicio Complementario 2</h1>
+        <h1>Usando Expresiones Regulares</h1>
+        <form action="" class="formulario" id="formulario">
+            <!-- Carnet del estudiante -->
+            <div class="formulario_grupo" id="grupo_carnet">
+                <label for="carnet" class="formulario_label">Ingrese su Carnet</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="carnet" id="carnet" placeholder="MM200149">
+                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">El carnet debe de llevar dos letras y 6 números</p>
+            </div>
+
+            <!-- Nombre del estudiante -->
+            <div class="formulario_grupo" id="grupo_nombre">
+                <label for="nombre" class="formulario_label">Ingrese su Nombre Completo</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Adilson Arian Montes Martinez">
+                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">El nombre no debe de llevar números o carácteres especiales</p>
+            </div>
+
+            <!-- Dui del estudiante -->
+            <div class="formulario_grupo" id="grupo_dui">
+                <label for="dui" class="formulario_label">Ingrese su DUI</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="dui" id="dui">
+                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">El DUI debe de tener el formato ########-#</p>
+            </div>
+
+            <!-- NIT del estudiante -->
+            <div class="formulario_grupo" id="grupo_nit">
+                <label for="nit" class="formulario_label">Ingrese su NIT</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="nit" id="nit">
+                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">En NIT debe de tener el formato ####-######-###-#</p>
+            </div>
+
+            <!-- Feha Nacimiento -->
+            <div class="formulario_grupo" id="grupo_nacimiento">
+                <label for="nacimiento" class="formulario_label">Ingrese su fecha de nacimiento</label>
+                <div class="formulario_grupo-input">
+                    <input type="nacimiento" class="formulario_input" name="nacimiento" id="nacimiento">
+                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">Debe de ingresar correctamente su fecha de nacimiento</p>
+            </div>
+
+            <!-- Correo Electronico -->
+            <div class="formulario_grupo" id="grupo_correo">
+				<label for="correo" class="formulario_label">Ingrese su Correo Electrónico</label>
+				<div class="formulario_grupo-input">
+					<input type="email" class="formulario_input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+            <!-- Edad del estudiante -->
+            <div class="formulario_grupo" id="grupo_edad">
+				<label for="edad" class="formulario_label">Ingrese su edad</label>
+				<div class="formulario_grupo-input">
+					<input type="text" class="formulario_input" name="edad" id="edad" placeholder="20">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input-error">Ingrese su edad correctamente</p>
+			</div>
+
+        </form>
+    </main>
+
+    <script src="js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
